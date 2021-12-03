@@ -14,6 +14,9 @@ Text Emotion Recognition Web App
 | CNN (128 Filters) | 0.3898 | 1.860 | 0.2770 | 2.1 | 58m 34s |
 | CNN (256 Filters) | 0.4484 | 1.728 | 0.307 | 2.046 | 59m 44s |
 
+Fine-Tuned Model:
+https://huggingface.co/junxtjx/roberta-base_TER/
+
 RoBERTa_base:
 https://wandb.ai/wasabee/Text_Emotion_Recognition_RoBERTa?workspace=user-wasabee
 
