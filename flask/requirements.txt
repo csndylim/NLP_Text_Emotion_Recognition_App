@@ -1,0 +1,9 @@
+flask
+nltk
+pandas
+regex
+sentencepiece
+string
+textblob
+transformers
+torch

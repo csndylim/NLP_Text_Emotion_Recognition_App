@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Text Emotion Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">
+</head>
+<body>
+    <h1><a href="/">&#128525; Text Emotion Recognition &#128552;</a></h1>
+
+    <div class="wrap-collabsible">
+        <input id="collapsible" class="toggle" type="checkbox">
+        <label for="collapsible" class="lbl-toggle"> &#128546; About &#128512;</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <pre>
+            By Tan Jun Xian, Candy Salome Lim, Afiqah Aris
+
+            Built using <span style="color:purple;font-weight:bold">RoBERTa</span> model with Crowdflower dataset.
+            Trained for 12 hours, 15 minutes and 4 seconds.
+
+            Model parameters:
+            The model was fine tuned using <span style="color:purple;font-weight:bold">3-Fold Cross Validation</span>, 
+            with <span style="color:purple;font-weight:bold">Categorical Entropy Loss</span> as this is a multi-class classification.
+            The <span style="color:purple;font-weight:bold">AdamW optimizer</span> is also used with a <span style="color:purple;font-weight:bold">Learning Rate of 1e-5</span>, 
+            in which the <span style="color:purple;font-weight:bold">ReduceLROnPlateau</span> function was implemented, with a patience of <span style="color:purple;font-weight:bold">3</span>. 
+            The <span style="color:purple;font-weight:bold">Max Length</span> parameter has also been set to <span style="color:purple;font-weight:bold">256</span>, with <span style="color:purple;font-weight:bold">Batch Size of 8</span>, 
+            this is due to the limitations of the available GPU. 
+            </pre>
+          </div>
+        </div>
+    </div>
+      
+    <h2>&#128548; How to run? &#128555;</h2>
+        <pre>
+            1. Enter the text in <span style="color:purple;font-weight:bold">English/Chinese/French/German/Italian/Japanese/Korean/Malay/Spanish</span> in the input section.
+            2. The model will predict the top 3 most probable emotions in <span style="color:purple;font-weight:bold">English</span>.
+            3. Results will be shown below.
+        </pre>
+
+    <form action="results" method="POST">
+        <h3>Enter text:
+            <input type="text" name="name_input">
+        </h3>
+        <input type="submit" id="results">
+        <div class="boxed">   
+            <h2>&#128519; Results &#128520;</h2>
+            {% for message in get_flashed_messages() %}
+            <p>{{ message }}<br/></p>
+            {% endfor %}
+        </div>
+    </form>
+</body>
+</html>
