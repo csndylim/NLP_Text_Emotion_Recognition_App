@@ -43,3 +43,6 @@ https://wandb.ai/wasabee/Text_Emotion_CNN_128?workspace=user-wasabee
 
 CNN_256
 https://wandb.ai/wasabee/Text_Emotion_CNN_256?workspace=user-wasabee
+
+
+You can download the dataset from https://data.world/crowdflower/sentiment-analysis-in-text
