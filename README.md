@@ -47,7 +47,4 @@ CNN_256
 https://wandb.ai/wasabee/Text_Emotion_CNN_256?workspace=user-wasabee
 
 ###
-Dataset
-
-
-You can download the dataset from https://data.world/crowdflower/sentiment-analysis-in-text
+Dataset: https://data.world/crowdflower/sentiment-analysis-in-text
