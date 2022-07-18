@@ -2,6 +2,8 @@
 
 Text Emotion Recognition Web App 
 
+### Training 
+
 | Model | Training Acc | Training Loss | Validation Acc | Validation Loss | Runtime
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | RoBERTa (base) | 89.942 | 0.3164 | 74.538 | 1.24 | 12h 57m 50s |
@@ -43,6 +45,9 @@ https://wandb.ai/wasabee/Text_Emotion_CNN_128?workspace=user-wasabee
 
 CNN_256
 https://wandb.ai/wasabee/Text_Emotion_CNN_256?workspace=user-wasabee
+
+###
+Dataset
 
 
 You can download the dataset from https://data.world/crowdflower/sentiment-analysis-in-text
